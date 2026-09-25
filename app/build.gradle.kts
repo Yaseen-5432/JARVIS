@@ -7,13 +7,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.jarvis"
+    namespace = "com.yaseen.jarvis"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.jarvis"
+        applicationId = "com.yaseen.jarvis"
         minSdk = 29
         targetSdk = 37
         versionCode = 1
