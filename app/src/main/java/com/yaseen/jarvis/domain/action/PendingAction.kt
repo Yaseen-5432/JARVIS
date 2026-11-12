@@ -5,13 +5,13 @@ import com.yaseen.jarvis.domain.tool.ToolRequest
 sealed interface PendingAction {
 
     data class PendingPermission(
-        val token: String,
+        val token: PermissionToken,
         val validatedRequest: ToolRequest,
         val permissionId: PermissionId
     ) : PendingAction
 
     data class PendingConfirmation(
-        val token: String,
+        val token: ConfirmationToken,
         val validatedRequest: ToolRequest
     ) : PendingAction
 }
